@@ -1,0 +1,29 @@
+keymap {
+    compatible =  "zmk,keymap" ;
+
+    default_layer {
+        bindings = <
+            &lt 1 LG(LC(Q))    // Lock Screen (Cmd + Ctrl + Q)
+            &kp LG(LS(N3))     // Screenshot, entire screen (Cmd + Shift + 3)
+            &kp LG(LS(N4))     // Screenshot, selection (Cmd + Shift + 4)
+            &kp LG(ALT(LEFT))  // Tab Left, Chrome (Cmd + Alt + Left)
+            &kp LC(LEFT)       // Desktop Left (Ctrl + Left)
+            &kp LC(RIGHT)      // Desktop Right (Ctrl + Right)
+            &kp LG(ALT(RIGHT)) // Tab Right, Chrome (Cmd + Alt + Right)
+            &bootloader         // Enter bootloader mode
+        >; 
+    };
+
+    lower {
+        bindings = <
+            &kp VOL_UP    // Volume Up
+            &kp VOL_DOWN  // Volume Down
+            &kp LG(C)     // Copy
+            &kp LG(V)     // Paste
+            &trans        // Placeholder for additional functions
+            &none         // Unused key
+            &none         // Unused key
+            &bootloader    // Enter bootloader mode
+        >; 
+    };
+};
